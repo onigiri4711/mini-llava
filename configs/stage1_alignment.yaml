@@ -1,0 +1,9 @@
+stage: stage1
+vision_model_name: openai/clip-vit-base-patch32
+llm_model_name: Qwen/Qwen2-0.5B
+projector_kind: mlp
+
+train_data: data/stage1_train.json
+batch_size: 16
+epochs: 1
+lr: 1.0e-3   # TODO: confirm against paper's Stage 1 LR
